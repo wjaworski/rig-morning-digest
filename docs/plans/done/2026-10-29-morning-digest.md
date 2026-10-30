@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-30
 ---
 
 # Morning digest
@@ -77,3 +78,15 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Run log reader: parse nightly JSONL | — | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
+| 2 | Digest page: GET /digest/:night | #1 | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
+| 3 | Digest JSON: GET /api/digest/:night | #1 | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
+| 4 | Link nightly digests from the status board | #1 | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
+| 5 | Add digest page and API route tests | #2, #3 | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
+| 6 | Publish morning digest preview for review | #2–#5 | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
+| 7 | Remove lane marker and archive morning digest plan | #6 | OpenCode harness · github-copilot/gpt-6-luna · medium | 2026-10-30 |
